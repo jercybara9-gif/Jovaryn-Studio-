@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fiche client — Tableau de bord JOVARYN STUDIO</title>
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="icon" href="../favicon.ico" sizes="any">
+  <link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;800&family=Sora:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/dashboard.css">
+</head>
+<body class="dash-body" data-dash-page>
+  <div class="dash-shell">
+    <aside class="dash-sidebar">
+      <div class="dash-brand"><picture><source srcset="../assets/logo-full.webp" type="image/webp"><img src="../assets/logo-full.png" alt="JOVARYN STUDIO" width="32" height="26"></picture>JOVARYN <span>STUDIO</span></div>
+      <nav class="dash-nav" aria-label="Navigation du tableau de bord">
+      <a href="index.html" class=""><span class="ic">▣</span>Vue d'ensemble</a>
+      <div class="group-label">Relation client</div>
+      <a href="prospects.html" class=""><span class="ic">★</span>Prospects</a>
+      <a href="clients.html" class="active"><span class="ic">◐</span>Clients</a>
+      <a href="messages.html" class=""><span class="ic">✉</span>Messages</a>
+      <div class="group-label">Activité</div>
+      <a href="commandes.html" class=""><span class="ic">▤</span>Commandes</a>
+      <a href="projets.html" class=""><span class="ic">◈</span>Projets</a>
+      <a href="paiements.html" class=""><span class="ic">€</span>Paiements</a>
+      <a href="revenus.html" class=""><span class="ic">◆</span>Revenus</a>
+      <div class="group-label">Système</div>
+      <a href="statistiques.html" class=""><span class="ic">▲</span>Statistiques</a>
+      <a href="notifications.html" class=""><span class="ic">◷</span>Notifications</a>
+      </nav>
+      <div class="dash-sidebar-foot">
+        <div class="dash-user"><div class="av">JS</div><div><strong>Équipe JOVARYN</strong><span>Administration</span></div></div>
+        <a href="#" class="logout-link">↩ Se déconnecter</a>
+        <a href="../index.html" class="logout-link">← Retour au site public</a>
+      </div>
+    </aside>
+    <div class="dash-main">
+      <div class="dash-topbar">
+        <div style="display:flex;align-items:center;gap:14px">
+          <button class="dash-menu-toggle" aria-label="Ouvrir le menu">☰</button>
+          <h1>Fiche client</h1>
+        </div>
+        <div class="dash-search"><input type="text" placeholder="Rechercher..." aria-label="Rechercher"></div>
+        <div class="dash-topbar-actions">
+          <button class="icon-btn" title="Notifications" onclick="location.href='notifications.html'">◷<span class="dot-badge"></span></button>
+          <button class="icon-btn" title="Messages" onclick="location.href='messages.html'">✉</button>
+        </div>
+      </div>
+      <div class="dash-content">
+
+      <div class="glass dash-panel" id="client-sheet">
+        <div class="client-sheet-head">
+          <div class="client-id-block">
+            <div class="av-lg" id="sheet-avatar">--</div>
+            <div>
+              <h2 id="sheet-name" style="margin-bottom:2px">Chargement...</h2>
+              <span class="small-note" id="sheet-company">—</span>
+            </div>
+          </div>
+          <div style="display:flex;gap:10px;align-items:center;flex-wrap:wrap">
+            <select id="sheet-client-select" style="background:rgba(255,255,255,.03);border:1px solid var(--border);border-radius:8px;padding:9px 12px;color:var(--white);font-size:.82rem"></select>
+            <div class="export-actions">
+              <button class="btn btn-outline btn-sm" id="export-json">Exporter JSON</button>
+              <button class="btn btn-outline btn-sm" id="export-md">Exporter Markdown</button>
+            </div>
+          </div>
+        </div>
+        <div class="info-grid">
+          <div class="info-item"><label>E-mail</label><div id="sheet-email">—</div></div>
+          <div class="info-item"><label>Téléphone</label><div id="sheet-phone">—</div></div>
+          <div class="info-item"><label>Adresse</label><div id="sheet-address">—</div></div>
+          <div class="info-item"><label>Secteur</label><div id="sheet-sector">—</div></div>
+          <div class="info-item"><label>Client depuis</label><div id="sheet-since">—</div></div>
+          <div class="info-item"><label>Valeur totale</label><div id="sheet-value">—</div></div>
+          <div class="info-item"><label>Statut</label><div id="sheet-status">—</div></div>
+        </div>
+        <h3 style="margin-top:26px">Notes</h3>
+        <p id="sheet-notes" style="color:var(--muted)">—</p>
+      </div>
+
+      <div class="glass dash-panel">
+        <div class="panel-head"><h2>Commandes liées</h2></div>
+        <div class="dash-table-wrap"><table class="dash-table" id="sheet-commandes"><thead><tr><th>ID</th><th>Service</th><th>Montant</th><th>Statut</th></tr></thead><tbody></tbody></table></div>
+      </div>
+      <div class="glass dash-panel">
+        <div class="panel-head"><h2>Paiements liés</h2></div>
+        <div class="dash-table-wrap"><table class="dash-table" id="sheet-paiements"><thead><tr><th>ID</th><th>Type</th><th>Montant</th><th>Statut</th></tr></thead><tbody></tbody></table></div>
+      </div>
+
+      </div>
+    </div>
+  </div>
+  <script src="../js/data.js"></script>
+  <script src="../js/export.js"></script>
+  <script src="../js/dashboard.js"></script>
+</body>
+</html>

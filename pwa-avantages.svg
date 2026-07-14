@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+<defs>
+<radialGradient id="g" cx="30%" cy="30%" r="80%">
+<stop offset="0%" stop-color="#0d1a33"/>
+<stop offset="100%" stop-color="#05070d"/>
+</radialGradient>
+<filter id="glow"><feGaussianBlur stdDeviation="14" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+</defs>
+<rect width="1200" height="630" fill="url(#g)"/>
+<line x1="-50" y1="56" x2="211" y2="-94" stroke="#0080ff" stroke-width="1" opacity="0.15"/><line x1="-50" y1="156" x2="953" y2="6" stroke="#0080ff" stroke-width="1" opacity="0.15"/><line x1="-50" y1="231" x2="361" y2="81" stroke="#0080ff" stroke-width="1" opacity="0.15"/><line x1="-50" y1="327" x2="217" y2="177" stroke="#0080ff" stroke-width="1" opacity="0.15"/><line x1="-50" y1="411" x2="1100" y2="261" stroke="#0080ff" stroke-width="1" opacity="0.15"/><line x1="-50" y1="504" x2="1077" y2="354" stroke="#0080ff" stroke-width="1" opacity="0.15"/>
+<circle cx="220" cy="315" r="150" fill="none" stroke="#00d4ff" stroke-width="2" opacity="0.5" filter="url(#glow)"/>
+<circle cx="220" cy="315" r="95" fill="none" stroke="#0080ff" stroke-width="6" opacity="0.7"/>
+<ellipse cx="220" cy="315" rx="190" ry="55" fill="none" stroke="#00d4ff" stroke-width="2" opacity="0.6" transform="rotate(-18 220 315)"/>
+<text x="420" y="290" font-family="sans-serif" font-size="42" font-weight="700" fill="#f5f7fa">PWA : le futur du web</text>
+<rect x="420" y="330" width="120" height="6" rx="3" fill="#00d4ff"/>
+</svg>

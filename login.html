@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Connexion — Tableau de bord JOVARYN STUDIO</title>
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="icon" href="../favicon.ico" sizes="any">
+  <link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;800&family=Sora:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/dashboard.css">
+</head>
+<body class="dash-body" data-login-page>
+<div class="login-shell">
+    <div class="glass login-box">
+      <picture><source srcset="../assets/logo-full.webp" type="image/webp"><img src="../assets/logo-full.png" alt="JOVARYN STUDIO"></picture>
+      <h1 style="font-size:1.3rem">Espace d'administration</h1>
+      <p style="font-size:.85rem;margin-bottom:24px">Entrez le code d'accès pour consulter le tableau de bord.</p>
+      <form id="login-form" novalidate>
+        <div class="field"><label for="login-passcode">Code d'accès</label><input id="login-passcode" type="password" required placeholder="••••••••"></div>
+        <div class="form-error-box" id="login-error" role="alert" style="margin-bottom:16px"><span>!</span> Code incorrect. Réessayez.</div>
+        <button type="submit" class="btn btn-primary btn-block">Accéder au tableau de bord</button>
+      </form>
+      <p class="small-note" style="margin-top:20px">Démonstration : code d'accès <code>jovaryn2026</code>. Voir le README pour changer ce code avant mise en production.</p>
+    </div>
+  </div>
+  <script src="../js/dashboard.js"></script>
+</body>
+</html>

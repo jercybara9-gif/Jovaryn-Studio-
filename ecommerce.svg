@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0%" stop-color="#05070d"/>
+    <stop offset="100%" stop-color="#0b0f1e"/>
+  </linearGradient>
+  <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0%" stop-color="#0080ff"/>
+    <stop offset="100%" stop-color="#00d4ff"/>
+  </linearGradient>
+  <filter id="glow"><feGaussianBlur stdDeviation="8" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+</defs>
+<rect width="1200" height="800" fill="url(#bg)"/>
+<rect x="0" y="0" width="1200" height="52" fill="#0d1220"/>
+<circle cx="30" cy="26" r="7" fill="#ff5f56"/>
+<circle cx="54" cy="26" r="7" fill="#ffbd2e"/>
+<circle cx="78" cy="26" r="7" fill="#27c93f"/>
+<rect x="120" y="14" width="360" height="24" rx="12" fill="#0b0f1e" stroke="#00d4ff" stroke-opacity="0.4"/>
+<text x="300" y="30" font-family="monospace" font-size="13" fill="#8b93a7" text-anchor="middle">jovarynstudio.com/boutique-ligne</text>
+<rect x="0" y="52" width="1200" height="90" rx="0" fill="#080b14" opacity="1"/><rect x="60" y="80" width="140" height="34" rx="8" fill="none" opacity="1" stroke="#00d4ff" stroke-width="1.5"/><rect x="1000" y="80" width="140" height="34" rx="17" fill="#0080ff" opacity="1"/><rect x="60" y="200" width="340" height="300" rx="16" fill="#101627" opacity="1"/><rect x="80" y="220" width="300" height="180" rx="10" fill="#0080ff" opacity="0.25"/><rect x="80" y="420" width="180" height="20" rx="4" fill="#8b93a7" opacity="0.6"/><rect x="80" y="450" width="100" height="26" rx="6" fill="#00d4ff" opacity="1"/><rect x="430" y="200" width="340" height="300" rx="16" fill="#101627" opacity="1"/><rect x="450" y="220" width="300" height="180" rx="10" fill="#0080ff" opacity="0.18"/><rect x="450" y="420" width="180" height="20" rx="4" fill="#8b93a7" opacity="0.6"/><rect x="450" y="450" width="100" height="26" rx="6" fill="#00d4ff" opacity="1"/><rect x="800" y="200" width="340" height="300" rx="16" fill="#101627" opacity="1"/><rect x="820" y="220" width="300" height="180" rx="10" fill="#0080ff" opacity="0.3"/><rect x="820" y="420" width="180" height="20" rx="4" fill="#8b93a7" opacity="0.6"/><rect x="820" y="450" width="100" height="26" rx="6" fill="#00d4ff" opacity="1"/><rect x="0" y="0" width="1200" height="800" fill="none" stroke="#00d4ff" stroke-opacity="0.25" stroke-width="2"/></svg>
